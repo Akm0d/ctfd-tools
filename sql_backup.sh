@@ -1,9 +1,9 @@
 #!/bin/bash
 
-DB="../CTFd/CTFd/ctfd.db"
+DB="${HOME}/CTFd/CTFd/ctfd.db"
 BACKUPS="backups"
 
-mkdir -p $BACKUPS;
+mkdir -p "${HOME}/$BACKUPS";
 
 # If the database exists then dump it
 if [ -f $DB ]; then
